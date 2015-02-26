@@ -186,6 +186,10 @@ Developed By
 ------------
 * Jeremy Feinstein
 
+Developed Work with DrawerArrowDrawable By
+------------
+* Hossein Rahimi
+
 License
 -------
 
