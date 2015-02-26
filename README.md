@@ -115,11 +115,12 @@ If you decide to use SlidingMenu as a view, you can define it in your xml layout
 
 
 
-__4.__      Add this Code to end of your Project
 
-Work whit DrawerArrowDrawable
+
+Work with DrawerArrowDrawable
 ------------------------------------------------
 
+__4.__      Add this Code to end of your Project
 
     /////////////////////////////////////Start Work whit DrawerArrowDrawable/////////////////////////////////
     DisplayMetrics DisplayPropertyW = config.nilu.getResources().getDisplayMetrics();
