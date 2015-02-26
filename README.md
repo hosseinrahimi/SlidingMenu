@@ -132,7 +132,6 @@ __4.__      Add this Code to end of your Project
 
     private void setArrowStatus(int positionOffsetPixels, int BehindOffset, DrawerArrowDrawable drawerArrowDrawable)
     {
-
         allwidth = DisplayPropertyW.widthPixels - BehindOffset;
         displayPixelsPlus = (positionOffsetPixels * positionOffsetPixels) / allwidth;
         arrowPrecent = ((displayPixelsPlus * 100) / allwidth);
@@ -149,10 +148,7 @@ __5.__      Add this Code to your Project too
             @Override
             public void onOpen(int positionOffsetPixels) {
                 // TODO Auto-generated method stub
-
                 setArrowStatus(positionOffsetPixels, BehindOffset, drawerArrowDrawable);
-
-                //Log.i("menuposition", "" + positionOffset);
             }
         });
 
