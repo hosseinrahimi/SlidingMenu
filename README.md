@@ -143,7 +143,7 @@ __4.__      Add this Code to end of your Project
     
 __5.__      Add this Code to your Project too
 
- menu.setOnOpenListener(new OnOpenListener() {
+    menu.setOnOpenListener(new OnOpenListener() {
             @Override
             public void onOpen(int positionOffsetPixels) {
                 // TODO Auto-generated method stub
