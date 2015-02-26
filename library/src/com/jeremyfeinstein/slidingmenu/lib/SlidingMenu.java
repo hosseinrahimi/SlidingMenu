@@ -93,7 +93,7 @@ public class SlidingMenu extends RelativeLayout {
         /**
          * On open.
          */
-        public void onOpen(float positionOffset);
+        public void onOpen(int positionOffsetPixels);
     }
 
 
@@ -234,7 +234,7 @@ public class SlidingMenu extends RelativeLayout {
             public void onPageScrolled(int position, float positionOffset,
                                        int positionOffsetPixels) {
 
-                mOpenListener.onOpen(positionOffset);
+                mOpenListener.onOpen(positionOffsetPixels);
                 //mCloseListener.onClose(positionOffset);
 
             }
@@ -242,11 +242,11 @@ public class SlidingMenu extends RelativeLayout {
 
             public void onPageSelected(int position) {
                 if (position == POSITION_OPEN && mOpenListener != null) {
-                    mOpenListener.onOpen(position);
+                    mOpenListener.onOpen(0);
                 } else if (position == POSITION_CLOSE && mCloseListener != null) {
                     mCloseListener.onClose(position);
                 } else if (position == POSITION_SECONDARY_OPEN && mSecondaryOpenListner != null) {
-                    mSecondaryOpenListner.onOpen(position);
+                    mSecondaryOpenListner.onOpen(0);
                 }
             }
         });
