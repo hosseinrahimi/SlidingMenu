@@ -122,7 +122,7 @@ Work with DrawerArrowDrawable
 
 __4.__      Add this Code to end of your Project
 
-    /////////////////////////////////////Start Work whit DrawerArrowDrawable/////////////////////////////////
+    /////////////////////////////////////Start Work with DrawerArrowDrawable/////////////////////////////////
     DisplayMetrics DisplayPropertyW = config.nilu.getResources().getDisplayMetrics();
     int            allwidth;
     int            displayPixelsPlus;
@@ -139,7 +139,7 @@ __4.__      Add this Code to end of your Project
         drawerArrowDrawable.setParameter(arrowPrecentx);
     }
 
-    /////////////////////////////////////End Work whit DrawerArrowDrawable/////////////////////////////////
+    /////////////////////////////////////End Work with DrawerArrowDrawable/////////////////////////////////
     
 __5.__      Add this Code to your Project too
 
