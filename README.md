@@ -112,6 +112,50 @@ If you decide to use SlidingMenu as a view, you can define it in your xml layout
     sliding:selectorEnabled="true|false"
     sliding:selectorDrawable="@drawable/YOUR_SELECTOR"/>
 ```
+
+
+
+__4.__      Add this Code to end of your Project
+
+Work whit DrawerArrowDrawable
+------------------------------------------------
+
+
+    /////////////////////////////////////Start Work whit DrawerArrowDrawable/////////////////////////////////
+    DisplayMetrics DisplayPropertyW = config.nilu.getResources().getDisplayMetrics();
+    int            allwidth;
+    int            displayPixelsPlus;
+    float          arrowPrecent;
+    float          arrowPrecentx;
+
+
+    private void setArrowStatus(int positionOffsetPixels, int BehindOffset, DrawerArrowDrawable drawerArrowDrawable)
+    {
+
+        allwidth = DisplayPropertyW.widthPixels - BehindOffset;
+        displayPixelsPlus = (positionOffsetPixels * positionOffsetPixels) / allwidth;
+        arrowPrecent = ((displayPixelsPlus * 100) / allwidth);
+        arrowPrecentx = arrowPrecent / 100;
+        drawerArrowDrawable.setParameter(arrowPrecentx);
+        //return arrowPrecent;
+    }
+
+    /////////////////////////////////////End Work whit DrawerArrowDrawable/////////////////////////////////
+    
+__5.__      Add this Code to your Project too
+
+ menu.setOnOpenListener(new OnOpenListener() {
+
+            @Override
+            public void onOpen(int positionOffsetPixels) {
+                // TODO Auto-generated method stub
+
+                setArrowStatus(positionOffsetPixels, BehindOffset, drawerArrowDrawable);
+
+                //Log.i("menuposition", "" + positionOffset);
+            }
+        });
+
 NOTE : you cannot use both behindOffset and behindWidth. You will get an exception if you try.
 * `viewAbove` - a reference to the layout that you want to use as the above view of the SlidingMenu
 * `viewBehind` - a reference to the layout that you want to use as the behind view of the SlidingMenu
