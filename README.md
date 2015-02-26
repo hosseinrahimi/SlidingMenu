@@ -138,7 +138,6 @@ __4.__      Add this Code to end of your Project
         arrowPrecent = ((displayPixelsPlus * 100) / allwidth);
         arrowPrecentx = arrowPrecent / 100;
         drawerArrowDrawable.setParameter(arrowPrecentx);
-        //return arrowPrecent;
     }
 
     /////////////////////////////////////End Work whit DrawerArrowDrawable/////////////////////////////////
